@@ -1357,7 +1357,7 @@ export default function FourWaysMediaOffMenuPage() {
                     <input
                       type="text"
                       required
-                      placeholder="e.g. Alex Sterling"
+                      placeholder="e.g. Umar Insavaliev"
                       value={heroData.name}
                       onChange={(e) => setHeroData({ ...heroData, name: e.target.value })}
                       className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:border-[#3643BA] focus:ring-2 focus:ring-[#3643BA]/15 text-stone-900 text-sm outline-none transition"
@@ -1563,7 +1563,7 @@ export default function FourWaysMediaOffMenuPage() {
             {[
               {
                 index: "01",
-                name: "Alex Sterling",
+                name: "Umar Insavaliev",
                 role: "Conversion Architecture",
                 focus:
                   "Specializes in sub-second Next.js web systems, psychological offer positioning, and multi-step lead capture flows.",
@@ -1572,7 +1572,7 @@ export default function FourWaysMediaOffMenuPage() {
               },
               {
                 index: "02",
-                name: "Marcus Vance",
+                name: "Khamid Kholmatov",
                 role: "Pipeline & Outbound",
                 focus:
                   "Engineers automated cold outbound infrastructure, high-intent paid acquisition funnels, and speed-to-lead CRM triggers.",
@@ -1581,7 +1581,7 @@ export default function FourWaysMediaOffMenuPage() {
               },
               {
                 index: "03",
-                name: "Elena Rostova",
+                name: "Onur Ahmadov",
                 role: "SMMA & Viral Branding",
                 focus:
                   "Builds category-dominating short-form content pipelines, founder authority architectures, and multi-channel retargeting.",
@@ -1590,7 +1590,7 @@ export default function FourWaysMediaOffMenuPage() {
               },
               {
                 index: "04",
-                name: "David Kross",
+                name: "Omar Mammadzade",
                 role: "Scaling & Unit Economics",
                 focus:
                   "Optimizes high-ticket offer pricing, close-rate mechanics, sales scripts, and backend operational throughput.",
@@ -1721,14 +1721,14 @@ export default function FourWaysMediaOffMenuPage() {
                       </div>
                     </div>
 
-                    {/* Alex Sterling (Web Architect) */}
+                    {/* Umar Insavaliev (Web Architect) */}
                     <div className="flex items-start gap-3">
                       <div className="w-8 h-8 rounded-full bg-[#3643BA] text-white font-bold flex items-center justify-center shrink-0 text-xs">
-                        AS
+                        UI
                       </div>
                       <div className="flex-1 space-y-1">
                         <div className="flex items-center gap-2">
-                          <span className="font-bold text-stone-900">Alex Sterling</span>
+                          <span className="font-bold text-stone-900">Umar Insavaliev</span>
                           <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded bg-[#3643BA]/10 text-[#3643BA]">WEB ARCHITECT</span>
                           <span className="text-stone-400 text-[10px]">10:16 AM (2m reply)</span>
                         </div>
@@ -1740,14 +1740,14 @@ export default function FourWaysMediaOffMenuPage() {
                       </div>
                     </div>
 
-                    {/* Marcus Vance (Outbound) */}
+                    {/* Khamid Kholmatov (Outbound) */}
                     <div className="flex items-start gap-3">
                       <div className="w-8 h-8 rounded-full bg-stone-900 text-white font-bold flex items-center justify-center shrink-0 text-xs">
-                        MV
+                        KK
                       </div>
                       <div className="flex-1 space-y-1">
                         <div className="flex items-center gap-2">
-                          <span className="font-bold text-stone-900">Marcus Vance</span>
+                          <span className="font-bold text-stone-900">Khamid Kholmatov</span>
                           <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded bg-stone-200 text-stone-700">PIPELINE & OUTBOUND</span>
                           <span className="text-stone-400 text-[10px]">10:17 AM</span>
                         </div>
@@ -1790,13 +1790,13 @@ export default function FourWaysMediaOffMenuPage() {
                       </div>
                     </div>
 
-                    {/* Live Typing Status - David Kross */}
+                    {/* Live Typing Status - Omar Mammadzade */}
                     <div className="flex items-center gap-3 pt-2">
                       <div className="w-8 h-8 rounded-full bg-stone-100 border border-stone-200 text-stone-400 font-bold flex items-center justify-center shrink-0 text-xs">
-                        DK
+                        OM
                       </div>
                       <div className="inline-flex items-center gap-2.5 bg-white border border-stone-200/70 rounded-full px-4 py-1.5 shadow-xs">
-                        <span className="text-[11px] text-stone-600 font-medium">David Kross is typing</span>
+                        <span className="text-[11px] text-stone-600 font-medium">Omar Mammadzade is typing</span>
                         <div className="flex items-center gap-1">
                           <span className="w-1.5 h-1.5 rounded-full bg-[#3643BA] typing-dot-1" />
                           <span className="w-1.5 h-1.5 rounded-full bg-[#3643BA] typing-dot-2" />
