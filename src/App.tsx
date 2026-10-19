@@ -352,17 +352,24 @@ export default function FourWaysMediaOffMenuPage() {
             </a>
           </nav>
 
-          {/* Center Signature Script Logo */}
+          {/* Creative Studio Wordmark Logo */}
           <a
             href="#"
-            className="hover:opacity-90 transition-transform hover:scale-105 inline-block text-center select-none py-1"
+            className="hover:opacity-90 transition-transform hover:scale-[1.03] inline-flex items-baseline gap-1 select-none py-1"
           >
             <span
-              className={`font-script text-2xl sm:text-4xl font-bold tracking-wide leading-tight transition-colors ${
+              className={`font-display text-2xl sm:text-3.5xl font-extrabold tracking-tighter leading-none transition-colors ${
                 navTheme === "cream" ? "text-[#0A0A0A]" : "text-white"
               }`}
             >
-              4ways media
+              4ways
+            </span>
+            <span
+              className={`font-serif italic text-lg sm:text-2xl font-normal transition-colors ${
+                navTheme === "cream" ? "text-stone-500" : "text-white/80"
+              }`}
+            >
+              media
             </span>
           </a>
 
@@ -572,15 +579,15 @@ export default function FourWaysMediaOffMenuPage() {
         </div>
 
         {/* Hero Content Container */}
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20">
           {/* Studio Pill Badge */}
-          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/25 text-white text-[10px] sm:text-xs font-semibold uppercase tracking-wider mb-5 sm:mb-8 shadow-sm max-w-full">
+          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/25 text-white font-mono text-[10px] sm:text-xs font-semibold uppercase tracking-wider mb-5 sm:mb-8 shadow-sm max-w-full">
             <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-emerald-400 animate-ripple shrink-0" />
             <span className="truncate">4-Man Growth Strike Team • Zero Middlemen</span>
           </div>
 
-          {/* Big, Friendly, Human, Ultra-Bold Headline */}
-          <h1 className="text-4xl sm:text-7xl lg:text-9xl font-black tracking-tight text-white leading-[1.05] sm:leading-[0.95] break-words">
+          {/* Big, Friendly, Human, Ultra-Bold Creative Headline */}
+          <h1 className="font-display text-[1.75rem] min-[370px]:text-[1.95rem] sm:text-6xl md:text-7xl lg:text-8xl xl:text-[6.25rem] font-extrabold tracking-tight text-white leading-[1.1] sm:leading-[0.95]">
             Be unignorable<span className="text-white/40">.</span>
           </h1>
 
@@ -674,10 +681,10 @@ export default function FourWaysMediaOffMenuPage() {
         <div className="max-w-7xl mx-auto space-y-24">
           {/* Eyebrow & Provocative Question */}
           <div className="max-w-3xl space-y-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-white/70 text-xs font-bold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-white/70 font-mono text-xs font-semibold uppercase tracking-wider">
               <span>It all starts with one question</span>
             </div>
-            <h2 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.05]">
+            <h2 className="font-display text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.05]">
               “Why should anyone care?”
             </h2>
             <p className="text-stone-300 text-base sm:text-xl font-normal leading-relaxed">
@@ -689,7 +696,7 @@ export default function FourWaysMediaOffMenuPage() {
 
           {/* Off-Menu 2-Column Process Cards ("We do two things and we do them well") */}
           <div className="space-y-8">
-            <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
+            <h3 className="font-display text-2xl sm:text-3xl font-bold tracking-tight text-white">
               We do two things and we do them well<span className="text-[#3643BA]">.</span>
             </h3>
 
@@ -697,10 +704,10 @@ export default function FourWaysMediaOffMenuPage() {
               {/* Card 1: We find your conversion edge */}
               <div className="bg-[#141414] rounded-3xl p-6 sm:p-10 lg:p-12 border border-white/10 hover:border-white/20 transition-all duration-300 flex flex-col justify-between space-y-6 sm:space-y-8">
                 <div className="space-y-3 sm:space-y-4">
-                  <div className="text-xs font-bold uppercase tracking-widest text-[#3643BA]">
+                  <div className="font-mono text-xs font-bold uppercase tracking-widest text-[#3643BA]">
                     Core Discipline // 01
                   </div>
-                  <h4 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+                  <h4 className="font-display text-2xl sm:text-3xl font-bold text-white tracking-tight">
                     We find your conversion edge
                   </h4>
                   <p className="text-stone-400 text-sm sm:text-base leading-relaxed">
@@ -714,7 +721,7 @@ export default function FourWaysMediaOffMenuPage() {
                     (tag, idx) => (
                       <div
                         key={idx}
-                        className="rounded-full bg-white/5 border border-white/10 px-3 py-2 text-center text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-white/80 hover:bg-white/15 hover:text-white transition"
+                        className="rounded-full bg-white/5 border border-white/10 px-3 py-2 text-center font-mono text-[11px] sm:text-xs font-medium uppercase tracking-wider text-white/80 hover:bg-white/15 hover:text-white transition"
                       >
                         {tag}
                       </div>
@@ -726,10 +733,10 @@ export default function FourWaysMediaOffMenuPage() {
               {/* Card 2: We scale your revenue velocity */}
               <div className="bg-[#141414] rounded-3xl p-6 sm:p-10 lg:p-12 border border-white/10 hover:border-white/20 transition-all duration-300 flex flex-col justify-between space-y-6 sm:space-y-8">
                 <div className="space-y-3 sm:space-y-4">
-                  <div className="text-xs font-bold uppercase tracking-widest text-[#3643BA]">
+                  <div className="font-mono text-xs font-bold uppercase tracking-widest text-[#3643BA]">
                     Core Discipline // 02
                   </div>
-                  <h4 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+                  <h4 className="font-display text-2xl sm:text-3xl font-bold text-white tracking-tight">
                     We scale your revenue velocity
                   </h4>
                   <p className="text-stone-400 text-sm sm:text-base leading-relaxed">
@@ -743,7 +750,7 @@ export default function FourWaysMediaOffMenuPage() {
                     (tag, idx) => (
                       <div
                         key={idx}
-                        className="rounded-full bg-white/5 border border-white/10 px-3 py-2 text-center text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-white/80 hover:bg-white/15 hover:text-white transition"
+                        className="rounded-full bg-white/5 border border-white/10 px-3 py-2 text-center font-mono text-[11px] sm:text-xs font-medium uppercase tracking-wider text-white/80 hover:bg-white/15 hover:text-white transition"
                       >
                         {tag}
                       </div>
@@ -756,13 +763,13 @@ export default function FourWaysMediaOffMenuPage() {
 
           {/* Off-Menu "What makes us different" Statement */}
           <div className="pt-12 border-t border-white/10 space-y-6">
-            <div className="text-xs font-bold uppercase tracking-widest text-white/50">
+            <div className="font-mono text-xs font-bold uppercase tracking-widest text-white/50">
               What makes us different
             </div>
-            <div className="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight max-w-4xl">
+            <div className="font-display text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight max-w-4xl">
               We help you build the growth engine everyone wants but nobody knows how to assemble. The kind of 
               infrastructure that makes founders say,{" "}
-              <span className="text-[#3643BA]">“Holy sh*t, why didn’t we deploy this six months ago?”</span>
+              <span className="font-serif italic font-normal text-[#3643BA]">“Holy sh*t, why didn’t we deploy this six months ago?”</span>
             </div>
           </div>
 
@@ -772,14 +779,14 @@ export default function FourWaysMediaOffMenuPage() {
           <div id="inflections" className="pt-12 border-t border-white/10 space-y-8">
             <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
               <div>
-                <div className="text-xs font-bold uppercase tracking-widest text-[#3643BA] mb-2">
+                <div className="font-mono text-xs font-bold uppercase tracking-widest text-[#3643BA] mb-2">
                   Six Inflection Points
                 </div>
-                <h3 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
+                <h3 className="font-display text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
                   When to deploy our strike team
                 </h3>
               </div>
-              <div className="text-xs text-white/50 uppercase tracking-widest">
+              <div className="font-mono text-xs text-white/50 uppercase tracking-widest">
                 Hover to expand // Click to mobilize
               </div>
             </div>
@@ -869,10 +876,10 @@ export default function FourWaysMediaOffMenuPage() {
           {/* Section Header */}
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-stone-200/80 pb-8 mb-12">
             <div className="space-y-3 max-w-2xl">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#3643BA]/10 text-[#3643BA] text-xs font-bold uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#3643BA]/10 text-[#3643BA] font-mono text-xs font-semibold uppercase tracking-wider">
                 <span>01 // The 4 Pillars</span>
               </div>
-              <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-stone-900 leading-tight">
+              <h2 className="font-display text-3xl sm:text-5xl font-extrabold tracking-tight text-stone-900 leading-tight">
                 4 Interconnected Disciplines. <br />
                 <span className="font-serif italic font-normal text-stone-500">
                   One Singular Objective: Net-New Revenue.
@@ -884,7 +891,7 @@ export default function FourWaysMediaOffMenuPage() {
               </p>
             </div>
 
-            <div className="text-xs font-bold uppercase tracking-wider text-stone-400">
+            <div className="font-mono text-xs font-bold uppercase tracking-wider text-stone-400">
               Synchronized Operating Squad
             </div>
           </div>
@@ -959,7 +966,7 @@ export default function FourWaysMediaOffMenuPage() {
               >
                 <div>
                   <div className="flex items-center justify-between pb-4 border-b border-stone-100 mb-6">
-                    <span className="text-xs font-bold text-[#3643BA] tracking-widest transition-transform duration-200 group-hover:translate-x-0.5">
+                    <span className="font-mono text-xs font-bold text-[#3643BA] tracking-widest transition-transform duration-200 group-hover:translate-x-0.5">
                       [{item.index} // 04]
                     </span>
                     <span className="text-xs font-semibold px-3 py-1 rounded-full bg-stone-100 text-stone-700 group-hover:bg-[#3643BA]/10 group-hover:text-[#3643BA] transition-colors duration-200">
@@ -967,10 +974,10 @@ export default function FourWaysMediaOffMenuPage() {
                     </span>
                   </div>
 
-                  <h3 className="text-2xl font-bold text-stone-900 tracking-tight mb-2 group-hover:text-[#3643BA] transition-colors duration-200">
+                  <h3 className="font-display text-2xl font-bold text-stone-900 tracking-tight mb-2 group-hover:text-[#3643BA] transition-colors duration-200">
                     {item.title}
                   </h3>
-                  <p className="font-serif italic text-stone-500 text-base mb-4 leading-relaxed">
+                  <p className="font-serif italic text-stone-600 text-lg mb-4 leading-relaxed">
                     "{item.serifQuote}"
                   </p>
 
@@ -979,7 +986,7 @@ export default function FourWaysMediaOffMenuPage() {
                   </p>
 
                   <div className="space-y-2.5 mb-8">
-                    <div className="text-[11px] font-bold uppercase tracking-wider text-stone-400">
+                    <div className="font-mono text-[11px] font-bold uppercase tracking-wider text-stone-400">
                       System Deliverables:
                     </div>
                     {item.deliverables.map((deliv, dIdx) => (
@@ -992,7 +999,7 @@ export default function FourWaysMediaOffMenuPage() {
                 </div>
 
                 <div className="pt-6 border-t border-stone-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                  <span className="text-xs font-bold uppercase tracking-wider text-[#3643BA]">
+                  <span className="font-mono text-xs font-bold uppercase tracking-wider text-[#3643BA]">
                     {item.benchmark}
                   </span>
                   <button
@@ -1020,10 +1027,10 @@ export default function FourWaysMediaOffMenuPage() {
           <div className="bg-white border border-stone-200/80 rounded-3xl p-5 sm:p-10 lg:p-16 shadow-[0_4px_24px_rgba(0,0,0,0.02)]">
             {/* Header */}
             <div className="space-y-3 max-w-2xl mb-10 sm:mb-12">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#3643BA]/10 text-[#3643BA] text-xs font-bold uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#3643BA]/10 text-[#3643BA] font-mono text-xs font-semibold uppercase tracking-wider">
                 <span>02 // Telemetry: Revenue Leak Modeler</span>
               </div>
-              <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-stone-900 leading-tight">
+              <h2 className="font-display text-3xl sm:text-5xl font-extrabold tracking-tight text-stone-900 leading-tight">
                 Quantify The Exact Pipeline <br />
                 <span className="font-serif italic font-normal text-stone-500">
                   Leaking From Your Funnel.
@@ -1200,11 +1207,11 @@ export default function FourWaysMediaOffMenuPage() {
             {/* Header */}
             <div className="flex flex-wrap items-center justify-between gap-4 border-b border-stone-200/70 pb-5 mb-8">
               <div className="flex items-center gap-2.5">
-                <span className="w-8 h-8 rounded-full bg-[#3643BA]/10 text-[#3643BA] flex items-center justify-center font-bold text-sm">
+                <span className="w-8 h-8 rounded-full bg-[#3643BA]/10 text-[#3643BA] flex items-center justify-center font-mono font-bold text-sm">
                   03
                 </span>
                 <div>
-                  <h3 className="font-bold text-base sm:text-lg text-stone-900 tracking-tight">
+                  <h3 className="font-display font-bold text-base sm:text-lg text-stone-900 tracking-tight">
                     Instant Growth Diagnostic
                   </h3>
                   <p className="text-xs text-stone-500">
@@ -1214,11 +1221,11 @@ export default function FourWaysMediaOffMenuPage() {
               </div>
 
               {heroStep < 4 ? (
-                <div className="text-xs font-semibold uppercase tracking-wider text-stone-400">
+                <div className="font-mono text-xs font-semibold uppercase tracking-wider text-stone-400">
                   Step <span className="text-[#3643BA] font-bold text-sm">0{heroStep}</span> of 03
                 </div>
               ) : (
-                <div className="text-xs font-bold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full">
+                <div className="font-mono text-xs font-bold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full">
                   Dispatched
                 </div>
               )}
@@ -1228,10 +1235,10 @@ export default function FourWaysMediaOffMenuPage() {
             {heroStep === 1 && (
               <div className="space-y-4">
                 <div className="space-y-1">
-                  <span className="text-xs font-bold uppercase tracking-wider text-[#3643BA]">
+                  <span className="font-mono text-xs font-bold uppercase tracking-wider text-[#3643BA]">
                     Parameter 01
                   </span>
-                  <h4 className="text-xl sm:text-2xl font-bold text-stone-900 tracking-tight">
+                  <h4 className="font-display text-xl sm:text-2xl font-bold text-stone-900 tracking-tight">
                     What is throttling your growth today?
                   </h4>
                   <p className="text-sm text-stone-600">
@@ -1273,10 +1280,10 @@ export default function FourWaysMediaOffMenuPage() {
                     >
                       <div>
                         <div className="flex items-center justify-between">
-                          <span className="text-xs font-bold text-[#3643BA]">[{item.id}]</span>
+                          <span className="font-mono text-xs font-bold text-[#3643BA]">[{item.id}]</span>
                           <ArrowRight className="w-4 h-4 text-stone-400 group-hover:text-[#3643BA] group-hover:translate-x-1 transition" />
                         </div>
-                        <div className="font-bold text-stone-900 text-sm sm:text-base mt-2 group-hover:text-[#3643BA] transition">
+                        <div className="font-display font-bold text-stone-900 text-sm sm:text-base mt-2 group-hover:text-[#3643BA] transition">
                           {item.title}
                         </div>
                         <p className="text-xs text-stone-500 mt-1 leading-relaxed">
@@ -1295,16 +1302,16 @@ export default function FourWaysMediaOffMenuPage() {
                 <button
                   type="button"
                   onClick={() => setHeroStep(1)}
-                  className="text-xs font-bold uppercase tracking-wider text-stone-400 hover:text-stone-800 inline-flex items-center gap-1 cursor-pointer"
+                  className="font-mono text-xs font-bold uppercase tracking-wider text-stone-400 hover:text-stone-800 inline-flex items-center gap-1 cursor-pointer"
                 >
                   ← Back to Step 1
                 </button>
 
                 <div className="space-y-1">
-                  <span className="text-xs font-bold uppercase tracking-wider text-[#3643BA]">
+                  <span className="font-mono text-xs font-bold uppercase tracking-wider text-[#3643BA]">
                     Parameter 02
                   </span>
-                  <h4 className="text-xl sm:text-2xl font-bold text-stone-900 tracking-tight">
+                  <h4 className="font-display text-xl sm:text-2xl font-bold text-stone-900 tracking-tight">
                     Current monthly revenue trajectory:
                   </h4>
                   <p className="text-sm text-stone-600">
@@ -1329,7 +1336,7 @@ export default function FourWaysMediaOffMenuPage() {
                       className="text-left p-4 rounded-2xl border border-stone-200 hover:border-[#3643BA] bg-stone-50/50 hover:bg-[#3643BA]/[0.03] transition-all duration-200 group flex items-center justify-between cursor-pointer"
                     >
                       <div>
-                        <div className="font-bold text-stone-900 text-sm group-hover:text-[#3643BA] transition">
+                        <div className="font-display font-bold text-stone-900 text-sm group-hover:text-[#3643BA] transition">
                           {item.tier}
                         </div>
                         <div className="text-xs text-stone-500 mt-0.5">{item.note}</div>
@@ -1347,16 +1354,16 @@ export default function FourWaysMediaOffMenuPage() {
                 <button
                   type="button"
                   onClick={() => setHeroStep(2)}
-                  className="text-xs font-bold uppercase tracking-wider text-stone-400 hover:text-stone-800 inline-flex items-center gap-1 cursor-pointer"
+                  className="font-mono text-xs font-bold uppercase tracking-wider text-stone-400 hover:text-stone-800 inline-flex items-center gap-1 cursor-pointer"
                 >
                   ← Back to Step 2
                 </button>
 
                 <div className="space-y-1">
-                  <span className="text-xs font-bold uppercase tracking-wider text-[#3643BA]">
+                  <span className="font-mono text-xs font-bold uppercase tracking-wider text-[#3643BA]">
                     Parameter 03
                   </span>
-                  <h4 className="text-xl sm:text-2xl font-bold text-stone-900 tracking-tight">
+                  <h4 className="font-display text-xl sm:text-2xl font-bold text-stone-900 tracking-tight">
                     Where should the 4 founders deliver your telemetry?
                   </h4>
                   <p className="text-sm text-stone-600">
@@ -1468,11 +1475,11 @@ export default function FourWaysMediaOffMenuPage() {
             <div className="grid lg:grid-cols-12 gap-10 items-center">
               {/* Left Context */}
               <div className="lg:col-span-6 space-y-4">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#3643BA]/10 text-[#3643BA] text-xs font-bold uppercase tracking-wider">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#3643BA]/10 text-[#3643BA] font-mono text-xs font-semibold uppercase tracking-wider">
                   <Play className="w-3 h-3 fill-current" />
                   <span>Audit Protocol // Unvarnished Teardown</span>
                 </div>
-                <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-stone-900 leading-tight">
+                <h2 className="font-display text-3xl sm:text-4xl font-extrabold tracking-tight text-stone-900 leading-tight">
                   Skeptical? We prove it first. <br />
                   <span className="font-serif italic font-normal text-stone-500">
                     Get a free 3-minute video teardown.
@@ -1558,10 +1565,10 @@ export default function FourWaysMediaOffMenuPage() {
         <section id="roster" className="mt-28 scroll-mt-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
           {/* Header */}
           <div className="space-y-3 max-w-2xl mb-12">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#3643BA]/10 text-[#3643BA] text-xs font-bold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#3643BA]/10 text-[#3643BA] font-mono text-xs font-semibold uppercase tracking-wider">
               <span>04 // Roster: The 4 Principals</span>
             </div>
-            <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-stone-900 leading-tight">
+            <h2 className="font-display text-3xl sm:text-5xl font-extrabold tracking-tight text-stone-900 leading-tight">
               Meet The 4 Operators <br />
               <span className="font-serif italic font-normal text-stone-500">
                 Direct In Your Dedicated Channel.
@@ -1620,20 +1627,20 @@ export default function FourWaysMediaOffMenuPage() {
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
                     <div
-                      className={`w-12 h-12 rounded-full ${op.avatarBg} text-white font-bold flex items-center justify-center text-sm shadow-sm transition-transform duration-300 group-hover:scale-110`}
+                      className={`w-12 h-12 rounded-full ${op.avatarBg} text-white font-display font-bold flex items-center justify-center text-sm shadow-sm transition-transform duration-300 group-hover:scale-110`}
                     >
                       {op.name.split(" ").map((n) => n[0]).join("")}
                     </div>
-                    <span className="text-xs font-bold text-[#3643BA] transition-transform duration-200 group-hover:translate-x-0.5">
+                    <span className="font-mono text-xs font-bold text-[#3643BA] transition-transform duration-200 group-hover:translate-x-0.5">
                       [{op.index}]
                     </span>
                   </div>
 
                   <div>
-                    <h4 className="text-xl font-bold text-stone-900 tracking-tight group-hover:text-[#3643BA] transition-colors duration-200">
+                    <h4 className="font-display text-xl font-bold text-stone-900 tracking-tight group-hover:text-[#3643BA] transition-colors duration-200">
                       {op.name}
                     </h4>
-                    <div className="text-xs font-bold uppercase tracking-wider text-[#3643BA] mt-0.5">
+                    <div className="font-mono text-[11px] font-bold uppercase tracking-wider text-[#3643BA] mt-0.5">
                       {op.role}
                     </div>
                   </div>
@@ -1642,14 +1649,14 @@ export default function FourWaysMediaOffMenuPage() {
                 </div>
 
                 <div className="pt-4 mt-6 border-t border-stone-100">
-                  <div className="text-[10px] font-bold uppercase tracking-wider text-stone-400 mb-2">
+                  <div className="font-mono text-[10px] font-bold uppercase tracking-wider text-stone-400 mb-2">
                     Specialized Stack:
                   </div>
                   <div className="flex flex-wrap gap-1.5">
                     {op.stack.map((tech, idx) => (
                       <span
                         key={idx}
-                        className="px-2.5 py-0.5 rounded-full bg-stone-100 text-stone-700 text-[10px] font-medium transition-colors duration-200 group-hover:bg-[#3643BA]/10 group-hover:text-[#3643BA]"
+                        className="px-2.5 py-0.5 rounded-full bg-stone-100 text-stone-700 font-mono text-[10px] font-medium transition-colors duration-200 group-hover:bg-[#3643BA]/10 group-hover:text-[#3643BA]"
                       >
                         {tech}
                       </span>
@@ -1669,10 +1676,10 @@ export default function FourWaysMediaOffMenuPage() {
             <div className="grid lg:grid-cols-12 gap-8 lg:gap-10 items-center">
               {/* Left Context */}
               <div className="lg:col-span-5 space-y-5 sm:space-y-6">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#3643BA]/10 text-[#3643BA] text-xs font-bold uppercase tracking-wider">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#3643BA]/10 text-[#3643BA] font-mono text-xs font-semibold uppercase tracking-wider">
                   <span>05 // Proof: Zero Account Managers</span>
                 </div>
-                <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-stone-900 leading-tight">
+                <h2 className="font-display text-3xl sm:text-4xl font-extrabold tracking-tight text-stone-900 leading-tight">
                   No tickets. No middlemen. <br />
                   <span className="font-serif italic font-normal text-stone-500">
                     You chat directly with the 4 operators.
@@ -1839,10 +1846,10 @@ export default function FourWaysMediaOffMenuPage() {
           {/* Header */}
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-stone-200/80 pb-8 mb-12">
             <div className="space-y-3 max-w-2xl">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#3643BA]/10 text-[#3643BA] text-xs font-bold uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#3643BA]/10 text-[#3643BA] font-mono text-xs font-semibold uppercase tracking-wider">
                 <span>06 // Results & Evidence</span>
               </div>
-              <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-stone-900 leading-tight">
+              <h2 className="font-display text-3xl sm:text-5xl font-extrabold tracking-tight text-stone-900 leading-tight">
                 Nice words from nice people<span className="text-[#3643BA]">.</span>
               </h2>
               <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
@@ -1864,21 +1871,21 @@ export default function FourWaysMediaOffMenuPage() {
             {/* Column 1 */}
             <div className="space-y-6">
               <div className="card-lift bg-white rounded-3xl p-6 sm:p-8 border border-stone-200/80 hover:border-[#3643BA]/40 shadow-sm space-y-4">
-                <p className="text-base sm:text-lg font-serif italic text-stone-800 leading-snug">
+                <p className="text-lg sm:text-xl font-serif italic text-stone-800 leading-relaxed font-normal">
                   "4ways is like having an adopted 4th co-founder who only cares about net-new revenue."
                 </p>
                 <div className="pt-2 border-t border-stone-100">
-                  <div className="font-bold text-stone-900 text-sm">Atikih</div>
+                  <div className="font-display font-bold text-stone-900 text-sm">Atikih</div>
                   <div className="text-xs text-stone-500">CEO at Acctual</div>
                 </div>
               </div>
 
               <div className="card-lift bg-white rounded-3xl p-6 sm:p-8 border border-stone-200/80 hover:border-[#3643BA]/40 shadow-sm space-y-4">
-                <p className="text-base sm:text-lg font-serif italic text-stone-800 leading-snug">
+                <p className="text-lg sm:text-xl font-serif italic text-stone-800 leading-relaxed font-normal">
                   "Our go-to partner for conversion architecture and high-velocity storytelling. They nailed our launch."
                 </p>
                 <div className="pt-2 border-t border-stone-100">
-                  <div className="font-bold text-stone-900 text-sm">Philip</div>
+                  <div className="font-display font-bold text-stone-900 text-sm">Philip</div>
                   <div className="text-xs text-stone-500">VP of Marketing at Scale</div>
                 </div>
               </div>
@@ -1887,21 +1894,21 @@ export default function FourWaysMediaOffMenuPage() {
             {/* Column 2 */}
             <div className="space-y-6">
               <div className="card-lift bg-white rounded-3xl p-6 sm:p-8 border border-stone-200/80 hover:border-[#3643BA]/40 shadow-sm space-y-4">
-                <p className="text-base sm:text-lg font-serif italic text-stone-800 leading-snug">
+                <p className="text-lg sm:text-xl font-serif italic text-stone-800 leading-relaxed font-normal">
                   "10/10, no notes. Within 14 days, our outbound calendar was booked solid with Series A CFOs."
                 </p>
                 <div className="pt-2 border-t border-stone-100">
-                  <div className="font-bold text-stone-900 text-sm">Fred</div>
+                  <div className="font-display font-bold text-stone-900 text-sm">Fred</div>
                   <div className="text-xs text-stone-500">Co-founder at Finder</div>
                 </div>
               </div>
 
               <div className="card-lift bg-white rounded-3xl p-6 sm:p-8 border border-stone-200/80 hover:border-[#3643BA]/40 shadow-sm space-y-4">
-                <p className="text-base sm:text-lg font-serif italic text-stone-800 leading-snug">
+                <p className="text-lg sm:text-xl font-serif italic text-stone-800 leading-relaxed font-normal">
                   "What started as a sprint project has evolved into an indispensable extension of our team."
                 </p>
                 <div className="pt-2 border-t border-stone-100">
-                  <div className="font-bold text-stone-900 text-sm">Yuri</div>
+                  <div className="font-display font-bold text-stone-900 text-sm">Yuri</div>
                   <div className="text-xs text-stone-500">Head of Growth at Klarity</div>
                 </div>
               </div>
@@ -1910,21 +1917,21 @@ export default function FourWaysMediaOffMenuPage() {
             {/* Column 3 */}
             <div className="space-y-6">
               <div className="card-lift bg-white rounded-3xl p-6 sm:p-8 border border-stone-200/80 hover:border-[#3643BA]/40 shadow-sm space-y-4">
-                <p className="text-base sm:text-lg font-serif italic text-stone-800 leading-snug">
+                <p className="text-lg sm:text-xl font-serif italic text-stone-800 leading-relaxed font-normal">
                   "It's rare to find an agency team who cares as obsessively about unit economics as you do."
                 </p>
                 <div className="pt-2 border-t border-stone-100">
-                  <div className="font-bold text-stone-900 text-sm">Nichole</div>
+                  <div className="font-display font-bold text-stone-900 text-sm">Nichole</div>
                   <div className="text-xs text-stone-500">General Partner at Wischoff Ventures</div>
                 </div>
               </div>
 
               <div className="card-lift bg-white rounded-3xl p-6 sm:p-8 border border-stone-200/80 hover:border-[#3643BA]/40 shadow-sm space-y-4">
-                <p className="text-base sm:text-lg font-serif italic text-stone-800 leading-snug">
+                <p className="text-lg sm:text-xl font-serif italic text-stone-800 leading-relaxed font-normal">
                   "The best operators I've ever worked with. An incredible 4-man strike force."
                 </p>
                 <div className="pt-2 border-t border-stone-100">
-                  <div className="font-bold text-stone-900 text-sm">Gareth</div>
+                  <div className="font-display font-bold text-stone-900 text-sm">Gareth</div>
                   <div className="text-xs text-stone-500">Head of Marketing at Bridge</div>
                 </div>
               </div>
@@ -1937,10 +1944,10 @@ export default function FourWaysMediaOffMenuPage() {
         =================================================================== */}
         <section id="faq" className="mt-28 scroll-mt-28 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
           <div className="space-y-3 mb-10 text-center sm:text-left">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#3643BA]/10 text-[#3643BA] text-xs font-bold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#3643BA]/10 text-[#3643BA] font-mono text-xs font-semibold uppercase tracking-wider">
               <span>07 // Clarity</span>
             </div>
-            <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-stone-900 leading-tight">
+            <h2 className="font-display text-3xl sm:text-5xl font-extrabold tracking-tight text-stone-900 leading-tight">
               Got questions<span className="text-[#3643BA]">?</span>
             </h2>
             <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
@@ -1978,8 +1985,8 @@ export default function FourWaysMediaOffMenuPage() {
                   className="w-full p-6 text-left flex items-center justify-between gap-4 group cursor-pointer hover:bg-stone-50/60 transition"
                 >
                   <div className="flex items-center gap-3.5">
-                    <span className="text-xs font-bold text-[#3643BA]">0{idx + 1}</span>
-                    <span className="text-base font-bold text-stone-900 group-hover:text-[#3643BA] transition">
+                    <span className="font-mono text-xs font-bold text-[#3643BA]">0{idx + 1}</span>
+                    <span className="font-display text-base font-bold text-stone-900 group-hover:text-[#3643BA] transition">
                       {item.q}
                     </span>
                   </div>
@@ -2015,12 +2022,12 @@ export default function FourWaysMediaOffMenuPage() {
           </div>
 
           <div className="relative z-10 max-w-3xl mx-auto space-y-6">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/20 text-white text-xs font-semibold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/20 text-white font-mono text-xs font-semibold uppercase tracking-wider">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
               <span>Immediate Capacity // 2 Spots Available</span>
             </div>
 
-            <h2 className="text-3xl sm:text-6xl font-black tracking-tight leading-tight">
+            <h2 className="font-display text-3xl sm:text-6xl font-black tracking-tight leading-tight">
               Plug The 4-Man Strike Team <br />
               Directly Into Your Engine<span className="text-white/40">.</span>
             </h2>
@@ -2061,10 +2068,11 @@ export default function FourWaysMediaOffMenuPage() {
       ===================================================================== */}
       <footer className="border-t border-stone-200/80 pt-12 pb-16 text-xs text-stone-500 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-12 text-center md:text-left">
-          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4">
-            <span className="font-script text-2xl text-stone-900 font-bold">4ways media</span>
-            <span className="text-stone-400">•</span>
-            <span>4-Operator Embedded Growth Pod</span>
+          <div className="flex items-baseline justify-center gap-1">
+            <span className="font-display text-2xl text-stone-900 font-extrabold tracking-tighter">4ways</span>
+            <span className="font-serif italic text-stone-500 text-lg font-normal">media</span>
+            <span className="text-stone-300 mx-2 hidden sm:inline">•</span>
+            <span className="hidden sm:inline text-stone-500">4-Operator Embedded Growth Pod</span>
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-[11px] uppercase tracking-wider font-semibold text-stone-600">
@@ -2143,11 +2151,11 @@ export default function FourWaysMediaOffMenuPage() {
 
             {!modalSubmitted ? (
               <form onSubmit={handleModalSubmit} className="space-y-4">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#3643BA]/10 text-[#3643BA] text-xs font-bold uppercase tracking-wider">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#3643BA]/10 text-[#3643BA] font-mono text-xs font-semibold uppercase tracking-wider">
                   <span>Ingestion // {modalService}</span>
                 </div>
 
-                <h3 className="text-2xl font-black tracking-tight text-stone-900">
+                <h3 className="font-display text-2xl font-black tracking-tight text-stone-900">
                   Deploy The 4-Man Strike Team
                 </h3>
                 <div className="space-y-1">

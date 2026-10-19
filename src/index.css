@@ -2,12 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-.font-script {
-  font-family: 'Caveat', cursive;
+.font-display {
+  font-family: 'Syne', system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.025em;
 }
 
 .font-serif {
-  font-family: 'Instrument Serif', Georgia, serif;
+  font-family: 'Fraunces', 'Instrument Serif', Georgia, serif;
+}
+
+.font-editorial {
+  font-family: 'Instrument Serif', 'Fraunces', Georgia, serif;
+}
+
+.font-script {
+  font-family: 'Fraunces', 'Instrument Serif', Georgia, serif;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 .font-mono {

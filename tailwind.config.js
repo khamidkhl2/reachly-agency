@@ -8,9 +8,11 @@ export default {
     extend: {
       fontFamily: {
         sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
-        serif: ['"Instrument Serif"', 'Georgia', 'serif'],
+        display: ['"Syne"', 'system-ui', '-apple-system', 'sans-serif'],
+        serif: ['"Fraunces"', '"Instrument Serif"', 'Georgia', 'serif'],
+        editorial: ['"Instrument Serif"', '"Fraunces"', 'Georgia', 'serif'],
         mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
-        script: ['"Caveat"', 'cursive'],
+        script: ['"Fraunces"', '"Instrument Serif"', 'Georgia', 'serif'],
       },
       colors: {
         periwinkle: {
