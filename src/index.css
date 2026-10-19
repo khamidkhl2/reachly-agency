@@ -1,0 +1,385 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-script {
+  font-family: 'Caveat', cursive;
+}
+
+.font-serif {
+  font-family: 'Instrument Serif', Georgia, serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  background-color: #FAF9F5;
+  color: #121212;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================================================
+   OFF-MENU SURREALIST 3D FLOATING ANIMATIONS
+   ============================================================================ */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-16px) rotate(1.5deg);
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-22px) rotate(-1.5deg);
+  }
+}
+
+@keyframes float-reverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(18px) rotate(1.2deg);
+  }
+}
+
+@keyframes float-bob {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(-12px) rotate(-3deg) scale(1.03);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-150%) skewX(-20deg);
+  }
+  100% {
+    transform: translateX(250%) skewX(-20deg);
+  }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.03);
+    opacity: 0.95;
+  }
+}
+
+@keyframes typing-dot {
+  0%, 60%, 100% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+  30% {
+    transform: translateY(-5px);
+    opacity: 1;
+  }
+}
+
+@keyframes ripple-ping {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 8.5s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: float-reverse 7s ease-in-out infinite;
+}
+
+.animate-float-bob {
+  animation: float-bob 5.5s ease-in-out infinite;
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+.animate-marquee-reverse {
+  display: flex;
+  width: max-content;
+  animation: marquee-reverse 26s linear infinite;
+}
+
+.animate-marquee-reverse:hover {
+  animation-play-state: paused;
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s ease-in-out infinite;
+}
+
+.animate-ripple {
+  animation: ripple-ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* Button Luxury Shimmer Effect */
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shimmer::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(60deg, transparent 35%, rgba(255, 255, 255, 0.45) 50%, transparent 65%);
+  transform: translateX(-150%) skewX(-20deg);
+  transition: transform 0.65s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.btn-shimmer:hover::after {
+  transform: translateX(150%) skewX(-20deg);
+}
+
+/* Smooth Card Hover Lift */
+.card-lift {
+  transition: transform 300ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 300ms cubic-bezier(0.16, 1, 0.3, 1), border-color 300ms ease;
+}
+
+.card-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px -12px rgba(54, 67, 186, 0.12), 0 8px 16px -8px rgba(0, 0, 0, 0.04);
+}
+
+/* Animated Top Border Expand on Hover */
+.hover-border-expand {
+  position: relative;
+}
+
+.hover-border-expand::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #3643BA;
+  transition: width 350ms cubic-bezier(0.16, 1, 0.3, 1);
+  border-radius: 9999px;
+}
+
+.hover-border-expand:hover::before {
+  width: 100%;
+}
+
+/* Typist Animation Dots */
+.typing-dot-1 {
+  animation: typing-dot 1.4s infinite ease-in-out;
+  animation-delay: 0s;
+}
+.typing-dot-2 {
+  animation: typing-dot 1.4s infinite ease-in-out;
+  animation-delay: 0.2s;
+}
+.typing-dot-3 {
+  animation: typing-dot 1.4s infinite ease-in-out;
+  animation-delay: 0.4s;
+}
+
+/* ============================================================================
+   OFF-MENU INTERACTIVE INFLECTION CARD HOVER EFFECT (scaleX expansion & color invert)
+   ============================================================================ */
+.inflection-card {
+  transition: 
+    background-color 260ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 260ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 260ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 260ms cubic-bezier(0.22, 1, 0.36, 1);
+  transform-origin: center;
+}
+
+.inflection-card:hover {
+  background-color: #FFFFFF !important;
+  transform: scaleX(1.015) translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.9) !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+}
+
+.inflection-card:hover .inflection-title,
+.inflection-card:hover .inflection-desc,
+.inflection-card:hover .inflection-num {
+  color: #0A0A0A !important;
+}
+
+.inflection-card:hover .inflection-arrow {
+  color: #0A0A0A !important;
+  transform: translateX(4px);
+}
+
+/* ============================================================================
+   STUDIO PRECISION SLIDER (PERIWINKLE ACCENTS)
+   ============================================================================ */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 24px;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+/* WebKit Track */
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  background: #E5E2D6;
+  border-radius: 9999px;
+  border: none;
+}
+
+/* WebKit Thumb - Exactly centered on track: (6px - 22px) / 2 = -8px */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  margin-top: -8px;
+  background: #3643BA;
+  border: 3px solid #ffffff;
+  box-shadow: 0 2px 8px rgba(54, 67, 186, 0.3);
+  cursor: pointer;
+  border-radius: 9999px;
+  transition: transform 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover,
+input[type="range"]::-webkit-slider-thumb:active {
+  background: #252F86;
+  transform: scale(1.18);
+  box-shadow: 0 4px 12px rgba(54, 67, 186, 0.45);
+}
+
+/* Firefox Track */
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 6px;
+  background: #E5E2D6;
+  border-radius: 9999px;
+  border: none;
+}
+
+/* Firefox Thumb */
+input[type="range"]::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  background: #3643BA;
+  border: 3px solid #ffffff;
+  box-shadow: 0 2px 8px rgba(54, 67, 186, 0.3);
+  cursor: pointer;
+  border-radius: 9999px;
+  transition: transform 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+input[type="range"]::-moz-range-thumb:hover,
+input[type="range"]::-moz-range-thumb:active {
+  background: #252F86;
+  transform: scale(1.18);
+  box-shadow: 0 4px 12px rgba(54, 67, 186, 0.45);
+}
+
+/* ============================================================================
+   CUSTOM SMOOTH STUDIO SCROLLBAR
+   ============================================================================ */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F4F2EA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(54, 67, 186, 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3643BA;
+}
+
+/* Text Selection */
+::selection {
+  background: #3643BA;
+  color: #FFFFFF;
+}
+::-moz-selection {
+  background: #3643BA;
+  color: #FFFFFF;
+}
