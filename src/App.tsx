@@ -762,14 +762,15 @@ export default function FourWaysMediaOffMenuPage() {
           </div>
 
           {/* Off-Menu "What makes us different" Statement */}
-          <div className="pt-12 border-t border-white/10 space-y-6">
+          <div className="pt-12 border-t border-white/10 space-y-4">
             <div className="font-mono text-xs font-bold uppercase tracking-widest text-white/50">
               What makes us different
             </div>
-            <div className="font-display text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight max-w-4xl">
-              We help you build the growth engine everyone wants but nobody knows how to assemble. The kind of 
-              infrastructure that makes founders say,{" "}
-              <span className="font-serif italic font-normal text-[#3643BA]">“Holy sh*t, why didn’t we deploy this six months ago?”</span>
+            <div className="font-display text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight max-w-3xl">
+              We build the growth engine{" "}
+              <span className="font-serif italic font-normal text-indigo-300">
+                everyone wants, but few know how to assemble.
+              </span>
             </div>
           </div>
 
